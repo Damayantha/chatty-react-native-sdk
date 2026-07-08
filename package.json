@@ -1,16 +1,29 @@
 {
-  "name": "@chatty/react-native",
-  "version": "0.1.0",
-  "description": "Native React Native chat widget SDK for Chatty AI chatbots",
+  "name": "@personaliai/react-native",
+  "version": "1.0.0",
+  "description": "Official React Native SDK for Chatty AI chatbots — native components, no WebView",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "src",
+    "README.md"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc --noEmit"
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Damayantha/chatty-react-native-sdk.git"
+  },
+  "homepage": "https://docs.personaliai.com/guides/mobile-sdks",
+  "keywords": ["chatty", "react-native", "chat", "ai", "chatbot", "sdk"],
+  "author": "PersonaliAI",
+  "license": "MIT",
   "peerDependencies": {
     "@react-native-async-storage/async-storage": ">=1.19",
     "react": ">=18",
@@ -22,6 +35,5 @@
     "react": "^18.2.0",
     "react-native": "^0.74.7",
     "typescript": "^5.9.3"
-  },
-  "license": "MIT"
+  }
 }
